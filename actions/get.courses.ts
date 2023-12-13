@@ -2,7 +2,6 @@ import { Category, Course } from "@prisma/client";
 
 import { getProgress } from "@/actions/get-progress";
 import { db } from "@/lib/db";
-import exp from "constants";
 
 
 type CourseWithProgresswithCategory = Course & {
@@ -68,7 +67,7 @@ export const getCourses = async ({
                     };
                 }
 
-                const progressPercentage = await getProgress(course.id, userId);
+                const progressPercentage = await getProgress(userId, course.id);
 
                 return {
                     ...course,

@@ -2,9 +2,11 @@ import { db } from "@/lib/db";
 
 
 export const getProgress = async (
-    courseId: string,
-    userId: string      
+    userId: string,
+    courseId: string,      
 ): Promise<number> => {
+    console.log('getProgress courseId inside getprogress:', courseId); // Debugging line
+    console.log('getProgress USERID inside getprogress:', userId); // Debugging line
     try {
         const publishedChapters = await db.chapter.findMany({
             where: {
@@ -15,8 +17,11 @@ export const getProgress = async (
                 id: true,
             },
         });
+        console.log('publishedChapters:', publishedChapters); // Debugging line
 
         const publishedChaptersIds = publishedChapters.map((chapter) => chapter.id);
+
+        console.log('publishedChaptersIds length:', publishedChaptersIds.length); // Debugging line
 
         const validCompletedChapters = await db.userProgress.count({
             where: {
