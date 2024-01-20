@@ -27,7 +27,7 @@ const iconMap = {
     sucess: CheckCircleIcon,
 };
 
-export const Banner = ({ 
+const Banner = ({ 
     label,
     variant,
 

@@ -11,7 +11,7 @@ interface SidebarItemProps {
     href: string;
 };
 
-export const SidebarItem = ({
+const SidebarItem = ({
     icon: Icon,
     label,
     href,

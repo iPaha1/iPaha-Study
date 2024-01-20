@@ -16,7 +16,8 @@ import { init } from "next/dist/compiled/webpack/webpack";
 import { Textarea } from "@/components/ui/textarea";
 import { Chapter, Course } from "@prisma/client";
 import { Input } from "@/components/ui/input";
-import { ChaptersList } from "./chapters-list";
+import ChaptersList from "./chapters-list";
+// import { ChaptersList } from "./chapters-list";
 
 interface ChapterFormProps {
     initialData: Course & { chapters: Chapter[] } ;
@@ -28,7 +29,7 @@ const formSchema = z.object({
     title: z.string().min(1),
 });
 
-export const ChapterForm = ({
+const ChapterForm = ({
     initialData,
     courseId
 }: ChapterFormProps) => {

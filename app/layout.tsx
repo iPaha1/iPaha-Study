@@ -5,6 +5,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import ToastProvider from '@/components/providers/toaster-provider'
 import Confetti from 'react-confetti/dist/types/Confetti'
 import { ConfettiProvider } from '@/components/providers/confetti-provider'
+import Footer from '@/components/footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,8 +28,11 @@ export default function RootLayout({
           <ConfettiProvider />
           <ToastProvider />
           {children}
+          <Footer />
           </body>
+          
       </html> 
+     
     </ClerkProvider>
       
   )

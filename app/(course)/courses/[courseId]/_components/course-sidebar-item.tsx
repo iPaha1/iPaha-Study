@@ -12,7 +12,7 @@ interface CourseSidebarItemProps {
     courseId: string;
 }
 
-export const CourseSidebarItem = ({
+const CourseSidebarItem = ({
     id,
     label,
     isCompleted,

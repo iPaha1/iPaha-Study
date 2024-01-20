@@ -18,7 +18,7 @@ interface CourseMobileSidebarProps {
   progressCount: number;
 };
 
-export const CourseMobileSidebar = ({ 
+const CourseMobileSidebar = ({ 
   course,
   progressCount,
 }: CourseMobileSidebarProps) => {

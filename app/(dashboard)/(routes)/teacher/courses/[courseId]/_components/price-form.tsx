@@ -30,7 +30,7 @@ const formSchema = z.object({
 
 });
 
-export const PriceForm = ({
+const PriceForm = ({
     initialData,
     courseId
 }: PriceFormProps) => {

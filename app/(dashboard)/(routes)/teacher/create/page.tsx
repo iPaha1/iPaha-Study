@@ -22,7 +22,7 @@ const formSchema = z.object({
 });
 
 
-export const CreatePage = () => {
+const CreatePage = () => {
 
     const router = useRouter();
 

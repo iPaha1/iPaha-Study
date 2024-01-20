@@ -29,7 +29,7 @@ const formSchema = z.object({
     }),
 });
 
-export const TitleForm = ({
+const TitleForm = ({
     initialData,
     courseId
 }: TitleFormProps) => {

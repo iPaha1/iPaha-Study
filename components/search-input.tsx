@@ -8,7 +8,7 @@ import qs from "query-string";
 import { useEffect } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
 
-export const SearchInput = () => {
+const SearchInput = () => {
 
     const [value, setValue] = useState("");
     const debouncedValue = useDebounce(value);

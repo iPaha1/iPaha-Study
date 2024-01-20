@@ -41,7 +41,7 @@ const teacherRoutes = [
 
 
 
-export const SidebarRoutes = () => {
+const SidebarRoutes = () => {
 
     const pathname = usePathname();
 

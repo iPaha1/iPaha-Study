@@ -3,18 +3,25 @@ import { db } from "@/lib/db"
 import { auth } from "@clerk/nextjs";
 import { CircleDollarSign, File, LayoutDashboard, ListChecks } from "lucide-react";
 import { redirect } from "next/navigation";
-import { TitleForm } from "./_components/title-form";
-import { DescriptionForm } from "./_components/description-form";
-import { ImageForm } from "./_components/image-form";
-import { CategoryForm }from "./_components/category-form";
-import { PriceForm } from "./_components/price-form";
-import { AttachmentForm } from "./_components/attachment-form";
-import { ChapterForm } from "./_components/chapters-form";
+// import { TitleForm } from "./_components/title-form";
+// import { DescriptionForm } from "./_components/description-form";
+// import { ImageForm } from "./_components/image-form";
+// import { CategoryForm }from "./_components/category-form";
+// import { PriceForm } from "./_components/price-form";
+// import { AttachmentForm } from "./_components/attachment-form";
+// import { ChapterForm } from "./_components/chapters-form";
 import Banner from "@/components/banner";
 import { CourseActionsForm } from "./_components/course-action-form";
+import TitleForm from "./_components/title-form";
+import DescriptionForm from "./_components/description-form";
+import ImageForm from "./_components/image-form";
+import CategoryForm from "./_components/category-form";
+import ChapterForm from "./_components/chapters-form";
+import PriceForm from "./_components/price-form";
+import AttachmentForm from "./_components/attachment-form";
 
 
-export const CourseIdPage = async ({
+const CourseIdPage = async ({
   params
 }: {
   params: { courseId: string };

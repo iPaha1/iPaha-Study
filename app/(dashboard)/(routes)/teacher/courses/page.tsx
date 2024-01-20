@@ -19,7 +19,7 @@ async function getData(): Promise<any[]> {
     ]
   }
 
-export const CoursesPage = async () => {
+const CoursesPage = async () => {
     
     const { userId } = auth();
 

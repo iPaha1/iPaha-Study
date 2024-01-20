@@ -16,7 +16,7 @@ interface ChaptersListProps {
     onEdit: (id: string) => void; 
 };
 
-export const ChaptersList = ({
+const ChaptersList = ({
     items,
     onReorder,
     onEdit,

@@ -26,7 +26,7 @@ const formSchema = z.object({
     videoUrl: z.string().min(1),
 });
 
-export const ChapterVideoForm = ({
+const ChapterVideoForm = ({
     initialData,
     courseId,
     chapterId

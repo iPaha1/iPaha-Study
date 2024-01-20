@@ -13,7 +13,7 @@ interface CategoryItemProps {
 }
 
 
-export const CategoryItem = ({
+const CategoryItem = ({
     label,
     icon: Icon,
     value
