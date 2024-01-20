@@ -1,4 +1,4 @@
-const { withUt } = require("Uploadthing/tw")
+const { withUt } = require("uploadthing/tw")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = withUt( {
